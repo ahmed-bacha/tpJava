@@ -8,8 +8,11 @@ import com.backonet.util.SoldeConsultable;
 public abstract class Compte implements SoldeConsultable {
 
 	private String numero;
+	
 	private String intitule;
+	
 	private Double solde;
+	
 
 	public Compte(String numero, String intitule, Double solde) {
 		super();

@@ -27,7 +27,21 @@ public class TestClient {
 				ce.setTauxInteret(1.5D);
 			}
 
-			Client c = new Client("id" + i, "nom" + i, "prenom" + i, cc, ce);
+			Client c = new Client("id" + i, "nom" + i, "prenom" + i);
+			
+			// ajouter compte courant
+			if( cc != null ){
+				
+				c.ajouterCompte(cc);
+
+			}
+			
+			// ajouter compte epargne
+			if( ce != null ){
+				
+				c.ajouterCompte(ce);
+			}
+			
 			tabClients[i] = c;
 		}
 
