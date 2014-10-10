@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+
+import com.backonet.domain.Point;
 
 public class TestCollection {
 
@@ -140,6 +141,23 @@ public class TestCollection {
 			System.out.println("Entre : " + entry.getValue() + " Note : "+ entry.getValue());
 			
 		}
+		
+		// Test des points , equals et hash
+		
+		System.out.println();
+		
+		Collection<Point> listePoints = new HashSet<>();
+		
+		listePoints.add(new Point(1,3));
+		
+		listePoints.add(new Point(2,5));
+		
+		listePoints.add(new Point(1,5));
+		
+		listePoints.add(new Point(1,3));
+		
+		System.out.println("ListePoints : "+ listePoints);
+		System.out.println("Taille de la listePoints : "+ listePoints.size());
 		
 		
 		
