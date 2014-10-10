@@ -6,7 +6,7 @@
     </Console>
     <File name="File" fileName="app.log.txt">
       <PatternLayout>
-        <Pattern>%logger{40} - %msg%n</Pattern>
+        <Pattern>%d{HH:mm:ss} [%t] %-5level %logger{40} - %msg%n</Pattern>
       </PatternLayout>
     </File>
   </Appenders>
