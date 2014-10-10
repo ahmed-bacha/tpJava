@@ -1,7 +1,8 @@
 package com.backonet.domain;
 
 import java.util.Collection;
-import java.util.HashSet;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Client {
 	
@@ -11,7 +12,7 @@ public class Client {
 	
 	private String prenom;
 	
-	private Collection<Compte> comptes;
+	private Map<String , Compte> comptesMap;
 	
 	
 	public Client(String identifiant, String nom, String prenom) {
@@ -23,7 +24,7 @@ public class Client {
 		
 		this.prenom = prenom;
 		
-		this.comptes = new HashSet<Compte>();
+		this.comptesMap = new HashMap<>();
 	}
 
 
@@ -36,7 +37,7 @@ public class Client {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("Client [identifiant="+identifiant+", pernom="+prenom+", nom=" + nom + ", nbrComptes= "+this.comptes.size()+ " ]");
+		sb.append("Client [identifiant="+identifiant+", pernom="+prenom+", nom=" + nom + ", nbrComptes= "+this.comptesMap.size()+ " ]");
 		
 		sb.append(" Avoir Global : ").append(this.calculerAvoirGlobal());
 		
@@ -48,7 +49,7 @@ public class Client {
 		
 		Double total = 0.0;
 		
-		for(Compte compte : this.comptes){
+		for(Compte compte : this.getComptes()){
 			
 			total += compte.getSolde();
 			
@@ -58,40 +59,31 @@ public class Client {
 	
 	public void ajouterCompte(Compte compte){
 		
-		this.comptes.add(compte);
+		this.comptesMap.put(compte.getNumero(), compte);
 		
 	}
 	
 	public void supprimerCompte(Compte compte){
 		
-		this.comptes.remove(compte);
+		this.comptesMap.remove(compte.getNumero());
 		
 	}
 	
 	public Compte retrouverCompte(String numero){
 		
-		Compte result = null;
-		
-		for(Compte compte : comptes){
-			
-			if(compte.getNumero().equals(numero)){
-				result = compte;
-				break;
-			}
-		}
-		
+		Compte result = this.comptesMap.get(numero);
+	
 		return result;
 		
 	}
 
 	public void supprimerCompte(String numero){
 	
-			Compte compte = this.retrouverCompte(numero);
-			
-			if(compte != null ){
-				
-				this.supprimerCompte(compte);
-			}
+		this.comptesMap.remove(numero);
+	}
+	
+	public Collection<Compte> getComptes() {
+		return this.comptesMap.values();
 	}
 	
 	
@@ -122,11 +114,6 @@ public class Client {
 
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
-	}
-
-
-	public Collection<Compte> getComptes() {
-		return comptes;
 	}
 
 
