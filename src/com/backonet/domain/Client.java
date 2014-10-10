@@ -37,7 +37,7 @@ public class Client {
 		
 		StringBuilder sb = new StringBuilder();
 		
-		sb.append("Client [identifiant="+identifiant+", pernom="+prenom+", nom=" + nom + ", nbrComptes= "+this.comptesMap.size()+ " ]");
+		sb.append("Client [identifiant="+identifiant+", pernom="+prenom+", nom=" + nom + ", nbrComptes= "+this.getNbComptes()+ ", NbCC= "+this.getNbCompteCourant()+", NbCE="+this.getNbCompteEpargne()+ "]");
 		
 		sb.append(" Avoir Global : ").append(this.calculerAvoirGlobal());
 		
@@ -55,6 +55,34 @@ public class Client {
 			
 		}
 		return total;
+	}
+	
+	public Integer getNbComptes(){
+		
+		return this.comptesMap.size();
+	}
+	
+	private Integer getNbComptesForType(TypeCompte typeCompte){
+		
+		Integer result = 0;
+		
+		for(Compte compte : this.getComptes()){
+			
+			if(compte.getTypeCompte() == typeCompte){
+				result++;
+			}
+		}
+		return result;
+	}
+	
+	public Integer getNbCompteCourant(){
+		
+		return this.getNbComptesForType(TypeCompte.COMPTE_COURANT);
+	}
+	
+	public Integer getNbCompteEpargne(){
+		
+		return this.getNbComptesForType(TypeCompte.COMPTE_EPARGNE);
 	}
 	
 	public void ajouterCompte(Compte compte){
