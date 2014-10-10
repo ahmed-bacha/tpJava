@@ -1,0 +1,13 @@
+2014-10-10 17:21:24,780 INFO j.l.Object [main] Average 1 : 3500.0
+2014-10-10 17:21:24,782 INFO j.l.Object [main] Average 2 : 9900.0
+2014-10-10 17:21:42,926 INFO c.b.t.TestAverageCalculator [main] Average 1 : 3500.0
+2014-10-10 17:21:42,928 INFO c.b.t.TestAverageCalculator [main] Average 2 : 9900.0
+2014-10-10 17:23:05,712 INFO c.b.t.TestAverageCalculator [main] Average 1 : 3500.0
+2014-10-10 17:23:05,715 INFO c.b.t.TestAverageCalculator [main] Average 2 : 9900.0
+2014-10-10 17:23:05,715 ERROR c.b.t.TestAverageCalculator [main] Done !
+2014-10-10 17:23:16,497 INFO c.b.t.TestAverageCalculator [main] Average 1 : 3500.0
+2014-10-10 17:23:16,500 INFO c.b.t.TestAverageCalculator [main] Average 2 : 9900.0
+2014-10-10 17:23:16,500 ERROR c.b.t.TestAverageCalculator [main] No one !
+com.bankonet.test.TestAverageCalculator - Average 1 : 3500.0
+com.bankonet.test.TestAverageCalculator - Average 2 : 9900.0
+com.bankonet.test.TestAverageCalculator - No one !

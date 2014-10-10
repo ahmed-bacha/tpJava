@@ -3,7 +3,7 @@ package com.backonet.batch;
 import com.backonet.util.SoldeConsultable;
 
 public class AverageCalculator {
-
+	
 	public static Double calculateAverage(SoldeConsultable[] soldeConsultables){
 		Double result = 0.0;
 		
