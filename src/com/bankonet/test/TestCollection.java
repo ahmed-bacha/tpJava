@@ -7,10 +7,14 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.backonet.domain.Point;
 
 public class TestCollection {
 
+	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger();
+	
 	public static void main(String[] args) {
 	
 		// list (interface) et ArrayList (implementation)
@@ -26,7 +30,7 @@ public class TestCollection {
 			System.out.println(i);
 		}
 		
-		System.out.println("Taille de integers1 "+ integers1.size());
+		logger.info("Taille de integers1 "+ integers1.size());
 		
 		Collection<Integer> integers2 = new ArrayList<>();
 		
@@ -39,10 +43,10 @@ public class TestCollection {
 		integers2.add(1);
 		
 		for(Integer i : integers2){
-			System.out.println(i);
+			logger.info(i);
 		}
 		
-		System.out.println("Taille de integers2 "+ integers2.size());
+		logger.info("Taille de integers2 "+ integers2.size());
 		
 		Set<Integer> integersSet = new HashSet<>();
 		
@@ -50,7 +54,7 @@ public class TestCollection {
 		
 		integersSet.addAll(integers2);
 		
-		System.out.println("Taille de integersSet "+ integersSet.size());
+		logger.info("Taille de integersSet "+ integersSet.size());
 		
 		
 		
@@ -66,7 +70,7 @@ public class TestCollection {
 			System.out.println(s);
 		}
 		
-		System.out.println("Taille de strings : "+ strings.size());
+		logger.info("Taille de strings : "+ strings.size());
 		
 		// Set , HashSet
 		Set<Integer> set = new HashSet<>();
@@ -85,9 +89,7 @@ public class TestCollection {
 		
 		set.add(4);
 		
-		System.out.println("Taille de strings : "+ set.size());
-		
-		System.out.println();
+		logger.info("Taille de strings : "+ set.size());
 		
 		// Map , HashMap
 		
@@ -111,10 +113,10 @@ public class TestCollection {
 			
 			Collection<String> villes = villesMap.get(cleDepartement);
 			
-			System.out.println("Departement -> " + cleDepartement);
+			logger.info("Departement -> " + cleDepartement);
 			
 			for(String city : villes){
-				System.out.println("\tVille : "+ city);
+				logger.info("\tVille : "+ city);
 			}
 		}
 		
@@ -131,20 +133,18 @@ public class TestCollection {
 		
 		for(Integer note : notes){
 			
-			System.out.println("Note : "+ note);
+			logger.info("Note : "+ note);
 		}
 		
 		Set<Map.Entry<String , Integer>>  entries = notesMap.entrySet();
 		
 		for(Map.Entry<String, Integer> entry : entries){
 			
-			System.out.println("Entre : " + entry.getValue() + " Note : "+ entry.getValue());
+			logger.info("Entre : " + entry.getValue() + " Note : "+ entry.getValue());
 			
 		}
 		
 		// Test des points , equals et hash
-		
-		System.out.println();
 		
 		Collection<Point> listePoints = new HashSet<>();
 		
@@ -156,8 +156,8 @@ public class TestCollection {
 		
 		listePoints.add(new Point(1,3));
 		
-		System.out.println("ListePoints : "+ listePoints);
-		System.out.println("Taille de la listePoints : "+ listePoints.size());
+		logger.info("ListePoints : "+ listePoints);
+		logger.info("Taille de la listePoints : "+ listePoints.size());
 		
 		
 		

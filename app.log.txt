@@ -1,3 +1,21 @@
 17:27:22 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 1 : 3500.0
 17:27:22 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 2 : 9900.0
 17:27:22 [main] ERROR com.bankonet.test.TestAverageCalculator - No one !
+09:37:10 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 1 : 3500.0
+09:37:10 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 2 : 9900.0
+09:37:10 [main] ERROR com.bankonet.test.TestAverageCalculator - No one !
+09:39:27 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 1 : 3500.0
+09:39:27 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 2 : 9900.0
+09:39:27 [main] ERROR com.bankonet.test.TestAverageCalculator - No one !
+09:40:12 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 1 : 3500.0
+09:40:12 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 2 : 9900.0
+09:40:12 [main] ERROR com.bankonet.test.TestAverageCalculator - No one !
+2014-10-17 10:10:01,452 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 1 : 3500.0
+2014-10-17 10:10:01,455 [main] INFO  com.bankonet.test.TestAverageCalculator - Average 2 : 9900.0
+2014-10-17 10:10:01,456 [main] ERROR com.bankonet.test.TestAverageCalculator - No one !
+2014-10-17 10:34:38,926 [main] INFO  com.bankonet.test.TestDebit - Apres 1er debit : Compte Epargne |  numero=CE1, intitule=CE1, solde=100.0, tauxInteret : 1.5, plafond : 10000.0
+2014-10-17 10:35:46,541 [main] INFO  com.bankonet.test.TestClient - Before removing
+2014-10-17 10:35:46,543 [main] INFO  com.bankonet.test.TestClient - Client [identifiant=id, pernom=prenom, nom=nom, nbrComptes= 10, NbCC= 5, NbCE=5] Avoir Global : 10000.0
+2014-10-17 10:35:46,544 [main] INFO  com.bankonet.test.TestClient - CC4 : Compte Courant |  numero=cc4, intitule=Compte Courant4, solde=1000.0, montantDecouvertAutorise : 1000.0
+2014-10-17 10:35:46,544 [main] INFO  com.bankonet.test.TestClient - After removing
+2014-10-17 10:35:46,544 [main] INFO  com.bankonet.test.TestClient - Client [identifiant=id, pernom=prenom, nom=nom, nbrComptes= 9, NbCC= 4, NbCE=5] Avoir Global : 9000.0

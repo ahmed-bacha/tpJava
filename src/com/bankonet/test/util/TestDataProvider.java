@@ -1,11 +1,15 @@
 package com.bankonet.test.util;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.backonet.domain.CompteCourant;
 import com.backonet.domain.CompteEpargne;
 import com.backonet.domain.Tresor;
 import com.backonet.util.SoldeConsultable;
 
 public class TestDataProvider {
+	
+	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger();
 
 	public static SoldeConsultable[] buildSoldeConsultableData(){
 		SoldeConsultable[] result = new SoldeConsultable[6];

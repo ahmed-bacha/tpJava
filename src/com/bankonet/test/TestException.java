@@ -1,9 +1,13 @@
 package com.bankonet.test;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.backonet.exception.BusinessException;
 import com.backonet.util.TestExceptionUtil;
 
 public class TestException {
+	
+	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger();
 
 	public static void main(String[] args) {
 	
@@ -14,7 +18,7 @@ public class TestException {
 			
 		} catch (BusinessException e) {
 			
-			System.out.println(e.getMessage());
+			logger.info(e.getMessage());
 		}
 		
 		

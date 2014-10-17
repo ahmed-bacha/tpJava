@@ -1,9 +1,13 @@
 package com.bankonet.test;
+import org.apache.logging.log4j.LogManager;
+
 import com.backonet.domain.CompteCourant;
 import com.backonet.exception.CreditException;
 import com.backonet.exception.DebitException;
 
 public class TestCompteCourant {
+	
+	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger();
 
 	public static void main(String[] args) throws DebitException {
 		
@@ -14,7 +18,7 @@ public class TestCompteCourant {
 		CompteCourant[] tabCompteCourant = {compteCourant1,compteCourant2,compteCourant3};
 
 		for(CompteCourant cc : tabCompteCourant){
-			System.out.println(cc);
+			logger.info(cc);
 		}
 		
 		compteCourant1.debiter(500.0);
@@ -32,12 +36,11 @@ public class TestCompteCourant {
 		}
 		
 		compteCourant3.debiter(100500.0);
-		System.out.println();
 		
 		for(CompteCourant cc : tabCompteCourant){
-			System.out.println(cc);
+			logger.info(cc);
 		}
 		
-		System.out.println("nbr d'instances : "+CompteCourant.getNbComptesCourants());
+		logger.info("nbr d'instances : "+CompteCourant.getNbComptesCourants());
 	}
 }

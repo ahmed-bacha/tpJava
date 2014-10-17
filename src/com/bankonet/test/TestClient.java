@@ -3,12 +3,16 @@ package com.bankonet.test;
 import java.util.Collection;
 import java.util.HashSet;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.backonet.domain.Client;
 import com.backonet.domain.Compte;
 import com.backonet.domain.CompteCourant;
 import com.backonet.domain.CompteEpargne;
 
 public class TestClient {
+	
+	private static final org.apache.logging.log4j.Logger logger = LogManager.getLogger();
 
 	public static void main(String[] args) {
 		
@@ -50,25 +54,23 @@ public class TestClient {
 			clients.add(c);
 		}
 		
-		System.out.println("Before removing");
-		System.out.println();
-
-		System.out.println(c);
+		logger.info("Before removing");
+		
+		logger.info(c);
 			
 		// traitement de suppression
 		Compte cc4 = c.retrouverCompte("cc4");
 			
 		if( cc4 != null ){
 				
-			System.out.println("CC4 : "+ cc4);
+			logger.info("CC4 : "+ cc4);
 			
 			c.supprimerCompte(cc4);
 		}
 		
-		System.out.println("After removing");
-		System.out.println();
+		logger.info("After removing");
 		
-		System.out.println(c);
+		logger.info(c);
 		
 	}
 }
