@@ -19,3 +19,784 @@
 2014-10-17 10:35:46,544 [main] INFO  com.bankonet.test.TestClient - CC4 : Compte Courant |  numero=cc4, intitule=Compte Courant4, solde=1000.0, montantDecouvertAutorise : 1000.0
 2014-10-17 10:35:46,544 [main] INFO  com.bankonet.test.TestClient - After removing
 2014-10-17 10:35:46,544 [main] INFO  com.bankonet.test.TestClient - Client [identifiant=id, pernom=prenom, nom=nom, nbrComptes= 9, NbCC= 4, NbCE=5] Avoir Global : 9000.0
+2014-10-17 11:44:58,462 [main] INFO  com.bankonet.test.TestFile - Copying file...
+2014-10-17 11:44:58,481 [main] INFO  com.bankonet.test.TestFile - Copy file done
+2014-10-17 11:44:58,482 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file D:/tmp/fichier1.txt
+2014-10-17 11:44:58,482 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : D:/tmp/fichier1.txt
+2014-10-17 11:44:58,490 [main] ERROR com.bankonet.test.util.FileReader - java.io.FileNotFoundException: D:/tmp/fichier1.txt (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:22)
+	at com.bankonet.test.TestFile.main(TestFile.java:30)
+
+2014-10-17 11:44:58,491 [main] INFO  com.bankonet.test.TestFile - Contenu fichier 1 : null
+2014-10-17 11:44:58,491 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text fileD:/tmp/fichier2.txt
+2014-10-17 11:44:58,491 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : D:/tmp/fichier2.txt
+2014-10-17 11:44:58,492 [main] ERROR com.bankonet.test.util.FileReader - java.io.FileNotFoundException: File 'D:/tmp/fichier2.txt' does not exist
+	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:299)
+	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1711)
+	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1748)
+	at com.bankonet.test.util.FileReader.advancedReadTextFile(FileReader.java:59)
+	at com.bankonet.test.TestFile.main(TestFile.java:34)
+
+2014-10-17 11:44:58,492 [main] INFO  com.bankonet.test.TestFile - Contenu fichier 2 : null
+2014-10-17 11:45:23,215 [main] INFO  com.bankonet.test.TestFile - Copying file...
+2014-10-17 11:45:23,227 [main] INFO  com.bankonet.test.TestFile - Copy file done
+2014-10-17 11:45:23,228 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello.txt
+2014-10-17 11:45:23,228 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello.txt
+2014-10-17 11:45:23,236 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.main(TestFile.java:30)
+
+2014-10-17 11:45:23,237 [main] INFO  com.bankonet.test.TestFile - Contenu fichier 1 : null
+2014-10-17 11:45:23,237 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 11:45:23,238 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 11:45:23,238 [main] INFO  com.bankonet.test.TestFile - Contenu fichier 2 : Hello from J//Academie
+2014-10-17 12:12:08,927 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:12:08,932 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:12:08,933 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:12:08,956 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:12:16,698 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:12:16,701 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:12:16,702 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:12:16,722 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:13:59,450 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:13:59,453 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:13:59,454 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:13:59,477 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:13:59,483 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:13:59,484 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:13:59,495 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:14:19,509 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:14:19,511 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:14:19,512 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:14:19,531 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:14:19,538 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:14:19,538 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:14:19,544 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:14:48,872 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:14:48,874 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:14:48,876 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:14:48,896 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:14:48,900 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:14:48,900 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:14:48,906 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:15:32,990 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:15:32,992 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:15:32,993 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:15:33,011 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:15:33,018 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:15:33,018 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:15:33,024 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:15:33,024 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:16:27,094 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:16:27,096 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:16:27,097 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:16:27,114 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:16:27,118 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:16:27,119 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:16:27,126 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:16:27,126 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:17:16,137 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:17:16,139 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:17:16,140 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:17:16,159 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:17:16,164 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:17:16,165 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:17:16,171 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:17:16,171 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:18:51,699 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:18:51,702 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:18:51,703 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:18:51,721 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:18:51,725 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:18:51,725 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:18:51,730 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:18:51,731 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:21:49,034 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:21:49,038 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:21:49,039 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:21:49,067 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:21:49,074 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:21:49,075 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:21:49,088 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:21:49,088 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:22:01,935 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:22:01,938 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:22:01,939 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:22:01,968 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:22:01,972 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:22:01,973 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:22:01,983 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:22:01,984 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:22:10,678 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:22:10,680 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:22:10,682 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:22:10,700 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:22:10,704 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:22:10,704 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:22:10,710 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:22:10,710 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:25:09,385 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:25:09,387 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:25:09,388 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:25:09,409 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:25:09,414 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:25:09,415 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:25:09,421 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:25:09,422 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 12:25:22,868 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:25:22,870 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:25:22,870 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:25:22,887 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 12:25:22,891 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 12:25:22,891 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 12:25:22,898 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 12:25:22,899 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 13:34:40,605 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 13:34:40,610 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:34:40,611 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:34:40,629 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:33)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 13:34:40,630 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 13:34:40,635 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 13:34:40,635 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:34:40,647 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 13:34:40,647 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 13:34:40,647 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 13:58:36,653 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 13:58:36,656 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:58:36,657 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:58:36,676 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:41)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 13:58:36,676 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 13:58:36,679 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 13:58:36,679 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file/Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:58:36,685 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 13:58:36,685 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 13:58:36,685 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 13:59:06,622 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 13:59:06,625 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:59:06,627 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:59:06,647 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:41)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 13:59:06,648 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 13:59:06,651 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 13:59:06,651 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 13:59:06,658 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 13:59:06,658 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 13:59:06,659 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 14:00:00,566 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:00:00,569 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:00:00,570 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:00:00,588 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:39)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 14:00:00,589 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 14:00:00,593 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:00:00,594 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:00:00,600 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 14:00:00,600 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:00:00,600 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 14:01:09,625 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:01:09,628 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:01:09,630 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:01:09,652 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:39)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 14:01:09,652 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 14:01:09,654 [main] INFO  com.bankonet.test.TestFile - Test advancedReadTextFile ...
+2014-10-17 14:01:09,655 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:01:09,662 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 14:01:09,663 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:01:09,663 [main] INFO  com.bankonet.test.TestFile - Testing advancedReadTextFile done ! 
+2014-10-17 14:01:51,421 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:01:51,423 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:01:51,424 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:01:51,443 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:38)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 14:01:51,443 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 14:01:51,447 [main] INFO  com.bankonet.test.TestFile - Test advancedReadTextFile ...
+2014-10-17 14:01:51,447 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:01:51,453 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 14:01:51,454 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:01:51,454 [main] INFO  com.bankonet.test.TestFile - Testing advancedReadTextFile done ! 
+2014-10-17 14:06:26,310 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:06:26,313 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:06:26,315 [main] ERROR com.bankonet.test.util.FileReader - Error while reading file : /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:06:26,332 [main] ERROR com.bankonet.test.util.FileReader - java.lang.NullPointerException
+	at com.bankonet.test.util.FileReader.simpleReadTextFile(FileReader.java:38)
+	at com.bankonet.test.TestFile.testSimpleReadTextFile(TestFile.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+
+2014-10-17 14:06:26,333 [main] INFO  com.bankonet.test.TestFile - null
+2014-10-17 14:06:26,336 [main] INFO  com.bankonet.test.TestFile - Test advancedReadTextFile ...
+2014-10-17 14:06:26,336 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:06:26,345 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 14:06:26,345 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:06:26,345 [main] INFO  com.bankonet.test.TestFile - Testing advancedReadTextFile done ! 
+2014-10-17 14:07:36,844 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:07:36,853 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:07:36,854 [main] INFO  com.bankonet.test.util.FileReader - Simple read text file done.
+2014-10-17 14:07:36,855 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:07:36,855 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 14:07:36,856 [main] INFO  com.bankonet.test.TestFile - Test advancedReadTextFile ...
+2014-10-17 14:07:36,857 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:07:36,888 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 14:07:36,888 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:07:36,889 [main] INFO  com.bankonet.test.TestFile - Testing advancedReadTextFile done ! 
+2014-10-17 14:10:53,741 [main] INFO  com.bankonet.test.TestFile - Init global ...
+2014-10-17 14:10:53,742 [main] INFO  com.bankonet.test.TestFile - Init global done.
+2014-10-17 14:10:53,745 [main] INFO  com.bankonet.test.TestFile - Init test ...
+2014-10-17 14:10:53,745 [main] INFO  com.bankonet.test.TestFile - Init test done.
+2014-10-17 14:10:53,745 [main] INFO  com.bankonet.test.TestFile - Test simpleReadTextFile ...
+2014-10-17 14:10:53,746 [main] INFO  com.bankonet.test.util.FileReader - Simple Read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:10:53,747 [main] INFO  com.bankonet.test.util.FileReader - Simple read text file done.
+2014-10-17 14:10:53,747 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:10:53,747 [main] INFO  com.bankonet.test.TestFile - Testing simpleReadTextFile done ! 
+2014-10-17 14:10:53,749 [main] INFO  com.bankonet.test.TestFile - Init test ...
+2014-10-17 14:10:53,749 [main] INFO  com.bankonet.test.TestFile - Init test done.
+2014-10-17 14:10:53,749 [main] INFO  com.bankonet.test.TestFile - Test advancedReadTextFile ...
+2014-10-17 14:10:53,749 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file /Users/ahmed/Documents/Hello2.txt
+2014-10-17 14:10:53,769 [main] INFO  com.bankonet.test.util.FileReader - Advanced read text file done
+2014-10-17 14:10:53,769 [main] INFO  com.bankonet.test.TestFile - Hello from J//Academie
+2014-10-17 14:10:53,769 [main] INFO  com.bankonet.test.TestFile - Testing advancedReadTextFile done ! 
+2014-10-17 15:02:06,499 [main] INFO  com.bankonet.test.TestDebit - Apres 1er debit : Compte Epargne |  numero=CE1, intitule=CE1, solde=100.0, tauxInteret : 1.5, plafond : 10000.0
+2014-10-17 15:02:06,503 [main] INFO  com.bankonet.test.TestDebit - Apres 2me debit : Compte Epargne |  numero=CE1, intitule=CE1, solde=100.0, tauxInteret : 1.5, plafond : 10000.0
+2014-10-17 15:02:06,504 [main] INFO  com.bankonet.test.TestDebit - Apres 1er debit : Compte Courant |  numero=CC1, intitule=CC1, solde=100.0, montantDecouvertAutorise : 200.0
+2014-10-17 15:02:06,504 [main] INFO  com.bankonet.test.TestDebit - Apres 2me debit : Compte Courant |  numero=CC1, intitule=CC1, solde=-100.0, montantDecouvertAutorise : 200.0
+2014-10-17 15:02:06,504 [main] INFO  com.bankonet.test.TestDebit - Apres 3me debit : Compte Courant |  numero=CC1, intitule=CC1, solde=-100.0, montantDecouvertAutorise : 200.0
